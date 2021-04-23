@@ -16,6 +16,9 @@ Vue.use(Ads.InFeedAdsense)
 
 Vue.use(VueHighlightJS)
 
+import VueLazyload from 'vue-lazyload'
+Vue.use(VueLazyload)
+
 new Vue({
   el: '#app',
   template: '<App/>',

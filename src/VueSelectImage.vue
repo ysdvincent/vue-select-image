@@ -8,7 +8,7 @@
           v-if="!isMultiple"
         >
           <img
-            :src="dataImage.src"
+            v-lazy="dataImage.src"
             :alt="dataImage.alt"
             :id="dataImage.id"
             :height="h"
@@ -25,7 +25,7 @@
           v-if="isMultiple"
         >
           <img
-            :src="dataImage.src"
+            v-lazy="dataImage.src"
             :alt="dataImage.alt"
             :id="dataImage.id"
             :height="h"
@@ -41,7 +41,7 @@
 </template>
 
 <script>
-export default {
+  export default {
   name: "vue-select-image",
   props: {
     dataImages: {
